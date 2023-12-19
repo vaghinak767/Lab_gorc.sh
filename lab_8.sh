@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#region 1
+#exersize 1
 while true; do
 	echo "Enter a number (0 to exit): "
 	read -r num
