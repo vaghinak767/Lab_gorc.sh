@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#region 1
+#exersize 1
 read -r -p "Enter a number: " number
 
 if [[ $number -gt 0 ]]; then
@@ -10,9 +10,8 @@ elif [[ $number -lt 0 ]]; then
 else
 	echo "The number is zero."
 fi
-#endregion
 
-#region 2
+#exersize 2
 read -r -p "Enter a number: " number
 
 if ((number > 0)); then
@@ -22,9 +21,9 @@ elif ((number < 0)); then
 else
 	echo "The number is zero."
 fi
-#endregion
 
-#region 3
+
+#exersize 3
 read -r -p "Enter a number: " number
 
 if ((number % 2 == 0 && number % 3 == 0 && number % 5 == 0)); then
@@ -32,9 +31,8 @@ if ((number % 2 == 0 && number % 3 == 0 && number % 5 == 0)); then
 else
 	echo "The number is not divisible by 2, 3, and 5."
 fi
-#endregion
 
-#region 4
+#exersize 4
 read -r -p "Enter a number: " number
 
 if ((number % 2 == 0 || number % 3 == 0 || number % 5 == 0)); then
@@ -42,18 +40,15 @@ if ((number % 2 == 0 || number % 3 == 0 || number % 5 == 0)); then
 else
 	echo "The number is not divisible by 2, 3, or 5."
 fi
-#endregion
 
-#region 5
+#exersize 5
 touch new_file.txt
 chmod +rwx new_file.txt
-#endregion
 
-#region 6
+#exersize 6
 [ -d dir ] || mkdir dir
-#endregion
 
-#region 7
+#exersize 7
 read -r -p "Enter a number: " number
 
 if ((number >= 10 && number <= 20)); then
@@ -61,9 +56,8 @@ if ((number >= 10 && number <= 20)); then
 else
 	echo "The number is not within the range of 10 to 20."
 fi
-#endregion
 
-#region 8
+#exersize 8
 read -r -p "Enter a word: " word
 
 if [ "$word" == "Secret" ]; then
@@ -71,9 +65,8 @@ if [ "$word" == "Secret" ]; then
 else
 	echo "The word does not match 'Secret'."
 fi
-#endregion
 
-#region 9
+#exersize 9
 read -r -p "Enter a filename: " filename
 
 if [[ "$filename" =~ ^[A-Za-z0-9._-]+$ ]]; then
@@ -82,9 +75,8 @@ if [[ "$filename" =~ ^[A-Za-z0-9._-]+$ ]]; then
 else
 	echo "Invalid filename."
 fi
-#endregion
 
-#region 10
+#exersize 10
 read -r -p "Enter the first number: " num1
 read -r -p "Enter the operator (+, -, *, /, **): " operator
 read -r -p "Enter the second number: " num2
@@ -99,4 +91,3 @@ case $operator in
 esac
 
 echo "Result of the operation: $result"
-#endregion
