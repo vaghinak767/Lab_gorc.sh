@@ -1,22 +1,21 @@
 #!/bin/bash
 
-#region 1
+#exersize 1
 count=0
 while [ $count -le 20 ]; do
 	echo $count
 	count=$((count + 2))
 done
-#endregion
 
-#region 2
+#exersize 2
 count=0
 until [ $count -gt 20 ]; do
 	echo $count
 	count=$((count + 2))
 done
-#endregion
 
-#region 3
+
+#exersize 3
 index=0
 while true; do
 	square=$((index * index))
@@ -26,15 +25,13 @@ while true; do
 	echo "Square of $index is $square"
 	index=$((index + 1))
 done
-#endregion
 
-#region 4
+#exersize 4
 for ((count = 0; count <= 20; count += 2)); do
 	echo $count
 done
-#endregion
 
-#region 5
+#exersize 5
 while true; do
 	read -r -p "Enter an integer or 'q' to exit: " input
 	if [ "$input" == "q" ]; then
@@ -42,36 +39,31 @@ while true; do
 	fi
 	echo "Double of $input is $((input * 2))"
 done
-#endregion
 
-#region 6
+#exersize 6
 index=1
 while [ $index -le 5 ]; do
 	touch ./file_$index.txt
 	index=$((index + 1))
 done
-#endregion
 
-#region 7
+#exersize 7
 for ((i = 1; i <= 3; i++)); do
 	echo $((RANDOM % 31))
 done
-#endregion
 
-#region 8
+#exersize 8
 for file in *; do
 	echo "$file"
 done
-#endregion
 
-#region 9
+#exersize 9
 for file in "$@"; do
 	shortest_word=$(awk '{ print length, $0 }' "$file" | sort -n | head -n 1 | cut -d" " -f2-)
 	echo "Shortest word in $file: $shortest_word"
 done
-#endregion
 
-#region 10
+#exersize 10
 for file in "$@"; do
 	if [ -e "$file" ]; then
 		echo "$file exists."
@@ -84,4 +76,3 @@ for file in "$@"; do
 		echo "$file does not exist."
 	fi
 done
-#endregion
