@@ -8,17 +8,17 @@ echo -e "Hello\nWorld\nTestlo\nHillo\nOtherlo\n" >test_file.txt
 grep -E '\b\w{3}lo$' test_file.txt
 
 #exersize 3
-grep -h '[A-Z]' список_каталогов*.txt:
-grep -h '[-AZ]' список_каталогов*.txt:  
-grep -h '^[A-Z]' список_каталогов*.txt: 
-grep -h '[^A-Z]' список_каталогов*.txt: 
+grep -h '[A-Z]' *.txt: #տողերում փնտրում է գոնե մի հատ մեծատառ ունեցող տողեր
+grep -h '[-AZ]' *.txt: #որոնում է '֊', 'A', 'Z' սիմվոլներից մեկը պարունակող տողեր
+grep -h '^[A-Z]' *.txt: #որոնում է մեծատառով սկսվող տողերը
+grep -h '[^A-Z]' *.txt: #փնտրում է այն տողերը որոնք պարունակում են մեծատառից բացի ուրիշ սիմվոլներ
 
 #exersize 4
-grep -E '^(bz|zip)' dirlist-bin.txt dirlist-sbin.txt
+grep -E '^(bz|zip)' touch.txt to.txt
 
 #exersize 5
-grep -Eh '^(bz|gz|zip)' список_каталогов*.txt 
-grep -Eh '^bz|gz|zip' список_каталогов*.txt
+grep -Eh '^(bz|gz|zip)' *.txt # որոնում է bz gz zip տողերը
+grep -Eh '^bz|gz|zip' *.txt #որոնում է bz֊ով սկսվող և gz-ով կամ zip-ով ավարտվող տողեր 
 
 #exersize 6
 echo "test@test.com" | grep -E '^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$'
