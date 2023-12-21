@@ -1,8 +1,8 @@
 #exersize 1
 
-cat > file1 
-cat file1 
-cat < file1 
+cat > file1 #ստեղծում ա ֆայլ file1 անունով և մուտքագրվում ա մինչև ctrl+D սեղմելը
+cat file1 #ուղղակի ցույց է տալիս ֆայլի պարունակությունը
+cat < file1 #ցույց է տալիս ֆայլի պարունակությունը
 
 #exersize 2
 
