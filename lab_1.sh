@@ -7,8 +7,8 @@ mkdir dir1 dir2
 
 #exersize2
 
-ls *.txt 
-ls * .txt 
+ls *.txt #փնտրում է .txt extension-ով ֆայլ
+ls * .txt #ման եկա չգտա տեղեկություն, աշխատացրեցի էլ տարբերությունը չհասկացա
 
 #exersize3
 
